@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,27 +12,65 @@
       rel="stylesheet"
     />
   </head>
-  <body class="scroll-smooth">
+  <body>
     <!-- Body Wrapper -->
-    <div class="flex flex-col min-h-dvh w-dvh">
+    <div class="flex flex-col min-h-dvh w-dvh bg-black text-white font-sans">
       <!-- Hero Section -->
-      <section
-        class="h-dvh w-full bg-primary-700 flex flex-col justify-center items-start"
-      >
+      <section class="h-dvh w-full flex flex-col relative">
         <img
-          class="h-full w-full object-cover"
+          class="h-full w-full object-cover brightness-50"
           src="../public/assets/hero.jpeg"
           alt="hero_image"
         />
+        <h1
+          class="font-serif absolute top-20 text-5xl font-bold leading-[3.5rem] uppercase"
+        >
+          Elegance Knows No Boundaries
+        </h1>
+        <nav class="flex justify-between w-full text-white absolute px-5 py-2">
+          <h3>Swamys Makeover</h3>
+          <h1>Menu</h1>
+        </nav>
+        <!-- appointment -->
+        <div
+          class="flex flex-col gap-5 absolute top-[50%] px-5 py-10 border rounded-2xl bord"
+        >
+          <h1 class="text-xl">Make an appointment</h1>
+          <form class="flex flex-col gap-2">
+            <input
+              type="text"
+              class="bg-transparent border rounded-md py-1 bord"
+            />
+            <input
+              type="text"
+              class="bg-transparent border rounded-md py-1 bord"
+            />
+            <input
+              type="text"
+              class="bg-transparent border rounded-md py-1 bord"
+            />
+            <div class="flex gap-2">
+              <input
+                type="date"
+                name=""
+                id=""
+                class="bg-transparent border rounded-md py-1 px-5"
+              />
+              <button type="submit" class="border rounded-md py-1 px-5">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
       </section>
       <!-- Service Intro -->
       <section
-        class="w-full bg-primary-700 h-screen p-5 justify-center items-center flex flex-col gap-3"
+        class="w-full h-screen p-5 justify-center items-center flex flex-col gap-3 text-white"
       >
-        <h1 class="text-slate-50 text-uppercase text-4xl font-semibold">
+        <h1 class="text-uppercase text-4xl font-semibold">
           Beyond Ordinary, Into The Extraordinary
         </h1>
-        <p class="text-slate-50">
+        <p class="">
           Step into our barbershop, a haven crafted for those who value premium
           quality, precision, and impeccable style. We elevate your look with
           subtle sophistication, ensuring you exude confidence and class
@@ -51,10 +89,8 @@
               />
             </div>
             <div class="flex flex-col gap-1">
-              <h3 class="text-slate-50 font-semibold text-lg">Location</h3>
-              <p class="text-slate-50 text-sm">
-                123 Elm St, San Fransisco, California
-              </p>
+              <h3 class="font-semibold text-lg">Location</h3>
+              <p class="text-sm">123 Elm St, San Francisco, California</p>
             </div>
           </div>
           <div class="w-full h-[2px] bg-slate-50 rounded-full"></div>
@@ -66,12 +102,10 @@
               <img src="../public/assets/icons/phone.svg" alt="location_icon" />
             </div>
             <div class="flex flex-col gap-1">
-              <h3 class="text-slate-50 font-semibold text-lg">Contact</h3>
+              <h3 class="font-semibold text-lg">Contact</h3>
               <div class="flex flex-col">
-                <p class="text-slate-50 text-sm">+91 1234567890</p>
-                <p class="text-slate-50 text-sm">
-                  swamysmakeoverstudio@gmail.com
-                </p>
+                <p class="text-sm">+91 1234567890</p>
+                <p class="text-sm">swamysmakeoverstudio@gmail.com</p>
               </div>
             </div>
           </div>
@@ -79,12 +113,12 @@
       </section>
       <!-- Works Intro -->
       <section
-        class="w-full bg-primary-200 h-screen p-5 justify-center items-center flex flex-col gap-5"
+        class="w-full h-screen p-5 justify-center items-center flex flex-col gap-5"
       >
-        <h1 class="text-primary-950 text-uppercase text-4xl font-semibold">
+        <h1 class="text-uppercase text-4xl font-semibold">
           Discover our works
         </h1>
-        <p class="text-primary-900">
+        <p class="">
           Our skilled hair stylists are passionate about their craft, constantly
           updating their techniques and knowledge to bring you the latest styles
           and the finest service.
