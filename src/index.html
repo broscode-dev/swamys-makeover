@@ -14,7 +14,9 @@
   </head>
   <body>
     <!-- Body Wrapper -->
-    <div class="flex flex-col min-h-dvh w-dvh bg-black text-white font-sans">
+    <div
+      class="flex flex-col min-h-dvh w-dvh bg-slate-900 text-white font-sans"
+    >
       <!-- Hero Section -->
       <section class="h-dvh w-full flex flex-col relative">
         <img
@@ -23,44 +25,52 @@
           alt="hero_image"
         />
         <h1
-          class="font-serif absolute top-20 text-5xl font-bold leading-[3.5rem] uppercase"
+          class="font-sans absolute top-20 leading-[3.5rem] text-5xl font-black px-5 text-secondary-400"
         >
-          Elegance Knows No Boundaries
+          WHERE TRADITION MEETS MODERN STYLE
         </h1>
-        <nav class="flex justify-between w-full text-white absolute px-5 py-2">
-          <h3>Swamys Makeover</h3>
-          <h1>Menu</h1>
+        <nav
+          class="flex justify-between w-full text-black absolute px-5 py-2 bg-lime-500"
+        >
+          <h3 class="font-normal">LOGO</h3>
+          <h1 class="font-normal">MENU</h1>
         </nav>
         <!-- appointment -->
-        <div
-          class="flex flex-col gap-5 absolute top-[50%] px-5 py-10 border rounded-2xl bord"
-        >
-          <h1 class="text-xl">Make an appointment</h1>
-          <form class="flex flex-col gap-2">
-            <input
-              type="text"
-              class="bg-transparent border rounded-md py-1 bord"
-            />
-            <input
-              type="text"
-              class="bg-transparent border rounded-md py-1 bord"
-            />
-            <input
-              type="text"
-              class="bg-transparent border rounded-md py-1 bord"
-            />
-            <div class="flex gap-2">
+        <div class="px-5 w-full absolute top-[50%]">
+          <div class="flex flex-col gap-5 px-10 py-5 border rounded-2xl w-full">
+            <h1 class="text-xl font-semibold">Book your appointment</h1>
+            <form class="flex flex-col gap-2 w-full">
               <input
-                type="date"
-                name=""
-                id=""
-                class="bg-transparent border rounded-md py-1 px-5"
+                type="text"
+                placeholder="Name"
+                class="bg-transparent border rounded-md py-3 text-xs pl-2"
               />
-              <button type="submit" class="border rounded-md py-1 px-5">
-                Submit
-              </button>
-            </div>
-          </form>
+              <input
+                type="text"
+                placeholder="Email"
+                class="bg-transparent border rounded-md py-3 text-xs pl-2"
+              />
+              <input
+                type="text"
+                placeholder="Phone"
+                class="bg-transparent border rounded-md py-3 text-xs pl-2"
+              />
+              <div class="flex gap-2 w-full">
+                <input
+                  type="date"
+                  name="date"
+                  id="date"
+                  class="w-full bg-transparent border rounded-md py-3 px-2 text-slate-400 text-xs"
+                />
+                <button
+                  type="submit"
+                  class="border rounded-md w-full bg-teal-500 text-left pl-2 text-xs font-semibold"
+                >
+                  Submit request
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </section>
       <!-- Service Intro -->
