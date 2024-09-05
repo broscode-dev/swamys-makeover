@@ -36,7 +36,7 @@ html,
   -moz-tab-size: 4; /* 3 */
   -o-tab-size: 4;
      tab-size: 4; /* 3 */
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
+  font-family: Inter, sans-serif; /* 4 */
   font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
   -webkit-tap-highlight-color: transparent; /* 7 */
@@ -501,17 +501,229 @@ video {
   --tw-contain-paint:  ;
   --tw-contain-style:  ;
 }
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.flex {
+  display: flex;
 }
-.font-bold {
-  font-weight: 700;
+.h-dvh {
+  height: 100dvh;
 }
-.text-slate-600 {
+.h-screen {
+  height: 100vh;
+}
+.h-96 {
+  height: 24rem;
+}
+.h-10 {
+  height: 2.5rem;
+}
+.h-14 {
+  height: 3.5rem;
+}
+.h-16 {
+  height: 4rem;
+}
+.h-11 {
+  height: 2.75rem;
+}
+.h-12 {
+  height: 3rem;
+}
+.h-\[25em\] {
+  height: 25em;
+}
+.h-1 {
+  height: 0.25rem;
+}
+.h-\[1px\] {
+  height: 1px;
+}
+.h-\[2px\] {
+  height: 2px;
+}
+.h-full {
+  height: 100%;
+}
+.min-h-dvh {
+  min-height: 100dvh;
+}
+.w-full {
+  width: 100%;
+}
+.w-24 {
+  width: 6rem;
+}
+.w-52 {
+  width: 13rem;
+}
+.w-80 {
+  width: 20rem;
+}
+.w-96 {
+  width: 24rem;
+}
+.w-\[25em\] {
+  width: 25em;
+}
+.w-10 {
+  width: 2.5rem;
+}
+.w-14 {
+  width: 3.5rem;
+}
+.flex-col {
+  flex-direction: column;
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
+.gap-3 {
+  gap: 0.75rem;
+}
+.gap-5 {
+  gap: 1.25rem;
+}
+.gap-2 {
+  gap: 0.5rem;
+}
+.gap-1 {
+  gap: 0.25rem;
+}
+.gap-10 {
+  gap: 2.5rem;
+}
+.gap-8 {
+  gap: 2rem;
+}
+.overflow-auto {
+  overflow: auto;
+}
+.scroll-auto {
+  scroll-behavior: auto;
+}
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+.rounded-md {
+  border-radius: 0.375rem;
+}
+.bg-primary-700 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(7 114 151 / var(--tw-bg-opacity));
+}
+.bg-slate-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+}
+.bg-primary-300 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 231 255 / var(--tw-bg-opacity));
+}
+.bg-primary-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 180 222 / var(--tw-bg-opacity));
+}
+.bg-primary-200 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(161 242 255 / var(--tw-bg-opacity));
+}
+.bg-\[url\(\'\.\.\/public\/assets\/hero\.jpeg\'\)\] {
+  background-image: url('../public/assets/hero.jpeg');
+}
+.bg-cover {
+  background-size: cover;
+}
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+.fill-black {
+  fill: #000;
+}
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.p-3 {
+  padding: 0.75rem;
+}
+.p-5 {
+  padding: 1.25rem;
+}
+.px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+.py-16 {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+.font-semibold {
+  font-weight: 600;
+}
+.leading-4 {
+  line-height: 1rem;
+}
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+.text-slate-50 {
   --tw-text-opacity: 1;
-  color: rgb(71 85 105 / var(--tw-text-opacity));
+  color: rgb(248 250 252 / var(--tw-text-opacity));
 }
-.underline {
-  text-decoration-line: underline;
+.text-red-400 {
+  --tw-text-opacity: 1;
+  color: rgb(248 113 113 / var(--tw-text-opacity));
+}
+.text-primary-50 {
+  --tw-text-opacity: 1;
+  color: rgb(235 254 255 / var(--tw-text-opacity));
+}
+.text-primary-500 {
+  --tw-text-opacity: 1;
+  color: rgb(0 180 222 / var(--tw-text-opacity));
+}
+.text-primary-950 {
+  --tw-text-opacity: 1;
+  color: rgb(5 49 71 / var(--tw-text-opacity));
+}
+.text-primary-900 {
+  --tw-text-opacity: 1;
+  color: rgb(19 80 108 / var(--tw-text-opacity));
+}
+@media (min-width: 640px) {
+
+  .sm\:h-14 {
+    height: 3.5rem;
+  }
+
+  .sm\:w-14 {
+    width: 3.5rem;
+  }
 }

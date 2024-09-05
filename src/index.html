@@ -5,10 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Swamys Makeover</title>
     <link rel="stylesheet" href="../output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <h1 class="text-3xl text-slate-600 font-bold underline">
-      Welcome to Swamy's Makeover Studio
-    </h1>
+  <body class="scroll-smooth">
+    <!-- Body Wrapper -->
+    <div class="flex flex-col min-h-dvh w-dvh">
+      <!-- Hero Section -->
+      <section
+        class="h-dvh w-full bg-primary-700 flex flex-col justify-center items-start"
+      >
+        <img
+          class="h-full w-full object-cover"
+          src="../public/assets/hero.jpeg"
+          alt="hero_image"
+        />
+      </section>
+      <!-- Service Intro -->
+      <section
+        class="w-full bg-primary-700 h-screen p-5 justify-center items-center flex flex-col gap-3"
+      >
+        <h1 class="text-slate-50 text-uppercase text-4xl font-semibold">
+          Beyond Ordinary, Into The Extraordinary
+        </h1>
+        <p class="text-slate-50">
+          Step into our barbershop, a haven crafted for those who value premium
+          quality, precision, and impeccable style. We elevate your look with
+          subtle sophistication, ensuring you exude confidence and class
+          effortlessly.
+        </p>
+        <!-- Location & Contact Info -->
+        <div class="flex flex-col gap-8">
+          <!-- Location -->
+          <div class="flex items-center gap-5">
+            <div
+              class="flex justify-center items-center bg-slate-50 rounded-full w-14 h-14"
+            >
+              <img
+                src="../public/assets/icons/pin-drop.svg"
+                alt="location_icon"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <h3 class="text-slate-50 font-semibold text-lg">Location</h3>
+              <p class="text-slate-50 text-sm">
+                123 Elm St, San Fransisco, California
+              </p>
+            </div>
+          </div>
+          <div class="w-full h-[2px] bg-slate-50 rounded-full"></div>
+          <!-- Contact Info -->
+          <div class="flex items-center gap-5">
+            <div
+              class="flex justify-center items-center bg-slate-50 rounded-full w-14 h-14"
+            >
+              <img src="../public/assets/icons/phone.svg" alt="location_icon" />
+            </div>
+            <div class="flex flex-col gap-1">
+              <h3 class="text-slate-50 font-semibold text-lg">Contact</h3>
+              <div class="flex flex-col">
+                <p class="text-slate-50 text-sm">+91 1234567890</p>
+                <p class="text-slate-50 text-sm">
+                  swamysmakeoverstudio@gmail.com
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Works Intro -->
+      <section
+        class="w-full bg-primary-200 h-screen p-5 justify-center items-center flex flex-col gap-5"
+      >
+        <h1 class="text-primary-950 text-uppercase text-4xl font-semibold">
+          Discover our works
+        </h1>
+        <p class="text-primary-900">
+          Our skilled hair stylists are passionate about their craft, constantly
+          updating their techniques and knowledge to bring you the latest styles
+          and the finest service.
+        </p>
+        <div class="flex gap-3 overflow-auto w-full">
+          <img
+            class="rounded-md object-cover"
+            src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFyYmVyfGVufDB8fDB8fHww"
+            alt="img-1"
+          />
+          <img
+            class="rounded-md object-cover"
+            src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmFyYmVyfGVufDB8fDB8fHww"
+            alt="img-2"
+          />
+        </div>
+      </section>
+    </div>
   </body>
 </html>
