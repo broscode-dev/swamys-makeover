@@ -11,12 +11,36 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <style>
+      @keyframes slideInLeft {
+        from {
+          transform: translateX(-100%);
+        }
+        to {
+          transform: translateX(0);
+        }
+      }
+      @keyframes slideInTop {
+        from {
+          transform: translateY(-100%);
+        }
+        to {
+          transform: translateY(0);
+        }
+      }
+      .slide-in-top {
+        animation: slideInTop 2s ease-in-out forwards;
+      }
+      .slide-in-left {
+        transform: translateX(-100%);
+        animation: slideInLeft 2s ease-in-out forwards;
+        animation-delay: 2s;
+      }
+    </style>
   </head>
   <body>
     <!-- Body Wrapper -->
-    <div
-      class="flex flex-col min-h-dvh w-dvh bg-slate-900 text-white font-sans"
-    >
+    <div class="flex flex-col min-h-dvh w-dvh text-white font-sans">
       <!-- Hero Section -->
       <section class="h-dvh w-full flex flex-col relative">
         <img
@@ -25,55 +49,20 @@
           alt="hero_image"
         />
         <img
-          class="absolute top-20 px-5"
-          src="../public/assets/header.svg"
-          alt="hedaer"
+          src="../public/assets/Group 1.svg"
+          alt="tagline"
+          class="px-5 top-16 absolute slide-in-left"
         />
-        <nav class="flex justify-between w-full text-white absolute px-5 py-2">
+        <nav
+          class="flex justify-between w-full text-white absolute px-5 py-3 slide-in-top"
+        >
           <h3 class="font-normal">LOGO</h3>
           <h1 class="font-normal">MENU</h1>
         </nav>
-        <!-- appointment -->
-        <div class="px-5 w-full absolute top-[50%]">
-          <div class="flex flex-col gap-5 border-slate-800 rounded-2xl w-full">
-            <h1 class="text-xl font-semibold">Book your appointment</h1>
-            <form class="flex flex-col gap-2 w-full">
-              <input
-                type="text"
-                placeholder="Name"
-                class="bg-transparent border rounded-md py-3 text-xs pl-2"
-              />
-              <input
-                type="text"
-                placeholder="Email"
-                class="bg-transparent border rounded-md py-3 text-xs pl-2"
-              />
-              <input
-                type="text"
-                placeholder="Phone"
-                class="bg-transparent border rounded-md py-3 text-xs pl-2"
-              />
-              <div class="flex gap-2 w-full">
-                <input
-                  type="date"
-                  name="date"
-                  id="date"
-                  class="w-full bg-transparent border rounded-md py-3 px-2 text-slate-400 text-xs"
-                />
-                <button
-                  type="submit"
-                  class="border rounded-md w-full bg-teal-500 text-xs font-semibold"
-                >
-                  Submit request
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
       </section>
       <!-- Service Intro -->
       <section
-        class="w-full h-screen p-5 justify-center items-center flex flex-col gap-3 text-white"
+        class="w-full h-screen p-5 justify-center items-center flex flex-col gap-3 text-white bg-gradient-to-b from-slate-800 to-slate-950"
       >
         <h1 class="text-uppercase text-4xl font-semibold">
           Beyond Ordinary, Into The Extraordinary
@@ -121,7 +110,7 @@
       </section>
       <!-- Works Intro -->
       <section
-        class="w-full h-screen p-5 justify-center items-center flex flex-col gap-5"
+        class="w-full h-screen p-5 justify-center items-center flex flex-col gap-5 text-black"
       >
         <h1 class="text-uppercase text-4xl font-semibold">
           Discover our works
