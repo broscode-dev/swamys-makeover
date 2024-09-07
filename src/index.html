@@ -53,9 +53,9 @@
   </head>
   <body>
     <!-- Body Wrapper -->
-    <div class="flex flex-col min-h-dvh w-dvh text-slate-100 font-sans">
+    <div class="flex flex-col min-h-dvh w-dvh font-sans">
       <!-- Hero Section -->
-      <section class="h-dvh w-full flex flex-col relative">
+      <section class="h-dvh w-full flex flex-col relative text-slate-100">
         <img
           class="h-full w-full object-cover backdrop-brightness"
           src="../public/assets/hero.jpeg"
@@ -78,9 +78,9 @@
           makeovers, ensuring a unique, relaxing, and transformative experience.
         </p>
       </section>
-      <!-- Service Intro -->
+      <!-- Location & Contact Info-->
       <section
-        class="w-full h-screen px-5 py-10 gap-5 flex flex-col bg-gradient-to-b from-slate-800 to-slate-950"
+        class="w-full h-screen px-5 py-10 gap-5 flex flex-col bg-gradient-to-b from-slate-800 to-slate-950 text-slate-100"
       >
         <div class="flex flex-col gap-5">
           <h1 class="text-4xl font-semibold">
@@ -93,6 +93,7 @@
             class effortlessly.
           </p>
         </div>
+        <!-- Location in Map -->
         <div class="h-72">
           <iframe
             src="https://www.google.com/maps/d/u/1/embed?mid=1WADsQvm4NYDhHX8DFi8hFrDxE7QaWjY&ehbc=2E312F&noprof=1"
@@ -131,6 +132,80 @@
                 <p class="text-sm">swamysmakeoverstudio@gmail.com</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <!-- Services -->
+      <section
+        class="min-h-screen w-screen flex flex-col justify-center items-center gap-3 p-5"
+      >
+        <h1 class="text-4xl font-semibold">Services Offered</h1>
+        <!-- Services Container -->
+        <div class="grid grid-cols-1 gap-5">
+          <!-- Haircut Service -->
+          <div class="flex flex-col justify-center items-center gap-1">
+            <div
+              class="flex justify-center items-center bg-primary-200 rounded-full w-28 h-28"
+            >
+              <img
+                class="w-16"
+                src="../public/assets/icons/hair-dryer.svg"
+                alt="hair-dryer"
+              />
+            </div>
+            <h1 class="font-semibold text-lg">Hair Care Services</h1>
+          </div>
+          <!-- Skincare Service -->
+          <div class="flex flex-col justify-center items-center gap-1">
+            <div
+              class="flex justify-center items-center bg-primary-200 rounded-full w-28 h-28"
+            >
+              <img
+                class="w-16"
+                src="../public/assets/icons/cream.svg"
+                alt="creams"
+              />
+            </div>
+            <h1 class="font-semibold text-lg">Skin Care Services</h1>
+          </div>
+          <!-- Makeup Service -->
+          <div class="flex flex-col justify-center items-center gap-1">
+            <div
+              class="flex justify-center items-center bg-primary-200 rounded-full w-28 h-28"
+            >
+              <img
+                class="w-16"
+                src="../public/assets/icons/makeup.svg"
+                alt="makeup kit"
+              />
+            </div>
+            <h1 class="font-semibold text-lg">Makeup Services</h1>
+          </div>
+          <!-- Eyelash & Eyebrow Service -->
+          <div class="flex flex-col justify-center items-center gap-1">
+            <div
+              class="flex justify-center items-center bg-primary-200 rounded-full w-28 h-28"
+            >
+              <img
+                class="w-16"
+                src="../public/assets/icons/eye-shadow.svg"
+                alt="eye-shadow kit"
+              />
+            </div>
+            <h1 class="font-semibold text-lg">Eyelash & Eyebrow Services</h1>
+          </div>
+          <!-- Pedicure & Manicure Services-->
+          <div class="flex flex-col justify-center items-center gap-1">
+            <div
+              class="flex justify-center items-center bg-primary-200 rounded-full w-28 h-28"
+            >
+              <img
+                class="w-16"
+                src="../public/assets/icons/nails.svg"
+                alt="nail polish"
+              />
+            </div>
+            <h1 class="font-semibold text-lg">Pedicure & Manicure Services</h1>
           </div>
         </div>
       </section>
