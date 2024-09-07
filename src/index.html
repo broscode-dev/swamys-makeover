@@ -5,51 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Swamys Makeover</title>
     <link rel="stylesheet" href="../output.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
-    <style>
-      @keyframes backgroundBrightness {
-        from {
-          filter: brightness(0);
-        }
-        to {
-          filter: brightness(0.5);
-        }
-      }
-      @keyframes slideInLeft {
-        from {
-          transform: translateX(-100%);
-        }
-        to {
-          transform: translateX(0);
-        }
-      }
-      @keyframes slideInTop {
-        from {
-          transform: translateY(-100%);
-        }
-        to {
-          transform: translateY(0);
-        }
-      }
-      .slide-in-top {
-        animation-delay: 2s;
-        transform: translateY(-100%);
-        animation: slideInTop 2s ease-in-out forwards;
-      }
-      .slide-in-left {
-        transform: translateX(-100%);
-        animation: slideInLeft 2s ease-in-out forwards;
-        animation-delay: 2s;
-      }
-      .backdrop-brightness {
-        animation: backgroundBrightness 2s ease-in-out forwards;
-      }
-    </style>
   </head>
   <body>
     <!-- Body Wrapper -->
@@ -143,7 +105,9 @@
         <!-- Services Container -->
         <div class="grid grid-cols-1 gap-5">
           <!-- Haircut Service -->
-          <div class="flex flex-col justify-center items-center gap-1">
+          <div
+            class="flex flex-col justify-center items-center gap-1 animate-on-scroll"
+          >
             <div
               class="flex justify-center items-center bg-primary-200 rounded-full w-28 h-28"
             >
@@ -156,7 +120,9 @@
             <h1 class="font-semibold text-lg">Hair Care Services</h1>
           </div>
           <!-- Skincare Service -->
-          <div class="flex flex-col justify-center items-center gap-1">
+          <div
+            class="flex flex-col justify-center items-center gap-1 animate-on-scroll"
+          >
             <div
               class="flex justify-center items-center bg-primary-200 rounded-full w-28 h-28"
             >
@@ -169,7 +135,9 @@
             <h1 class="font-semibold text-lg">Skin Care Services</h1>
           </div>
           <!-- Makeup Service -->
-          <div class="flex flex-col justify-center items-center gap-1">
+          <div
+            class="flex flex-col justify-center items-center gap-1 animate-on-scroll"
+          >
             <div
               class="flex justify-center items-center bg-primary-200 rounded-full w-28 h-28"
             >
@@ -182,7 +150,9 @@
             <h1 class="font-semibold text-lg">Makeup Services</h1>
           </div>
           <!-- Eyelash & Eyebrow Service -->
-          <div class="flex flex-col justify-center items-center gap-1">
+          <div
+            class="flex flex-col justify-center items-center gap-1 animate-on-scroll"
+          >
             <div
               class="flex justify-center items-center bg-primary-200 rounded-full w-28 h-28"
             >
@@ -194,8 +164,10 @@
             </div>
             <h1 class="font-semibold text-lg">Eyelash & Eyebrow Services</h1>
           </div>
-          <!-- Pedicure & Manicure Services-->
-          <div class="flex flex-col justify-center items-center gap-1">
+          <!-- Pedicure & Manicure Services -->
+          <div
+            class="flex flex-col justify-center items-center gap-1 animate-on-scroll"
+          >
             <div
               class="flex justify-center items-center bg-primary-200 rounded-full w-28 h-28"
             >
@@ -235,5 +207,6 @@
         </div>
       </section>
     </div>
+    <script src="./scripts/scroll-animations.js"></script>
   </body>
 </html>
