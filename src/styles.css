@@ -27,17 +27,17 @@
   }
 }
 .slide-in-top {
-  animation-delay: 2s;
+  animation-delay: 1s;
   transform: translateY(-100%);
-  animation: slideInTop 2s ease-in-out forwards;
+  animation: slideInTop 1s ease-in-out forwards;
 }
 .slide-in-left {
   transform: translateX(-100%);
-  animation: slideInLeft 2s ease-in-out forwards;
-  animation-delay: 2s;
+  animation: slideInLeft 1s ease-in-out forwards;
+  animation-delay: 1s;
 }
 .backdrop-brightness {
-  animation: backgroundBrightness 2s ease-in-out forwards;
+  animation: backgroundBrightness 1s ease-in-out forwards;
 }
 .animate-fade-bottom-up-on-scroll {
   opacity: 0;

@@ -8,9 +8,6 @@ const observeScroll = (classToWatch = "") => {
           if (entry.isIntersecting) {
             // Add the animation class
             entry.target.classList.add("animate");
-          } else {
-            // Remove the animation class if it’s out of view
-            entry.target.classList.remove("animate");
           }
         });
       },
