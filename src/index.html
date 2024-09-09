@@ -15,32 +15,33 @@
   </head>
   <body>
     <!-- Body Wrapper -->
-    <div class="flex flex-col min-h-dvh w-dvh font-sans">
+    <div class="flex flex-col min-h-dvh w-dvh font-sans bg-black text-slate-50">
       <!-- Hero Section -->
-      <section class="h-dvh w-full flex flex-col relative text-slate-100">
-        <img
+      <section class="h-dvh w-full flex flex-col relative">
+        <video
+          src="../public/assets/4962903-uhd_1440_2732_25fps.mp4"
           class="h-full w-full object-cover backdrop-brightness"
-          src="../public/assets/hero.jpeg"
-          alt="hero_image"
-        />
+          autoplay
+          loop
+        ></video>
         <img
-          src="../public/assets/Group 1.svg"
+          src="../public/assets/Group 1 (11).svg"
           alt="tagline"
           class="px-5 top-16 absolute slide-in-left"
         />
         <nav
           class="flex justify-between w-full absolute px-5 py-3 slide-in-top"
         >
-          <h3 class="font-normal">LOGO</h3>
-          <h1 class="font-normal">MENU</h1>
+          <img src="../public/assets/Asset 2.png" alt="logo" class="w-16" />
+          <!-- <img
+            src="../public/assets/icons8-hamburger-menu.svg"
+            alt="menu"
+            class=""
+          /> -->
         </nav>
-        <div class="flex flex-col gap-2 absolute bottom-10 slide-in-left">
-          <p class="px-5 font-light">
-            At Swamys Makeover, we believe everyone deserves to feel beautiful.
-            We provide personalized beauty services, from haircuts to bridal
-            makeovers, ensuring a unique, relaxing, and transformative
-            experience.
-          </p>
+        <div
+          class="flex flex-col gap-2 absolute bottom-10 slide-in-left w-full"
+        >
           <a class="mx-5" href="./booking.html">
             <button
               class="w-full bg-secondary-400 text-slate-900 uppercase font-bold py-3"
@@ -54,12 +55,12 @@
       <section class="w-screen flex flex-col gap-10 p-5">
         <div class="flex flex-col gap-3">
           <h4
-            class="font-semibold text-sm uppercase text-primary-800 tracking-tight bg-primary-100 rounded-md w-fit p-2 animate-fade-from-left-on-scroll"
+            class="font-semibold text-sm uppercase tracking-tight rounded-md w-fit p-2 animate-fade-from-left-on-scroll"
           >
             Experience the authentic salon feel
           </h4>
           <h2
-            class="font-bold text-lg uppercase text-slate-800 animate-fade-from-left-on-scroll"
+            class="font-bold text-lg uppercase animate-fade-from-left-on-scroll"
           >
             Step Into a World of Exceptional Service and Unwind in a Relaxing
             Atmosphere
