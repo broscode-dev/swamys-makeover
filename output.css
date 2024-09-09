@@ -538,6 +538,13 @@ video {
 .h-full {
   height: 100%;
 }
+.h-fit {
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.h-\[30rem\] {
+  height: 30rem;
+}
 .min-h-72 {
   min-height: 18rem;
 }
