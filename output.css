@@ -516,6 +516,36 @@ video {
 .top-20 {
   top: 5rem;
 }
+.top-\[50\%\] {
+  top: 50%;
+}
+.bottom-0 {
+  bottom: 0px;
+}
+.bottom-52 {
+  bottom: 13rem;
+}
+.bottom-44 {
+  bottom: 11rem;
+}
+.bottom-40 {
+  bottom: 10rem;
+}
+.top-28 {
+  top: 7rem;
+}
+.top-24 {
+  top: 6rem;
+}
+.bottom-24 {
+  bottom: 6rem;
+}
+.bottom-32 {
+  bottom: 8rem;
+}
+.bottom-28 {
+  bottom: 7rem;
+}
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
@@ -540,6 +570,21 @@ video {
 }
 .h-full {
   height: 100%;
+}
+.h-16 {
+  height: 4rem;
+}
+.h-10 {
+  height: 2.5rem;
+}
+.h-5 {
+  height: 1.25rem;
+}
+.h-8 {
+  height: 2rem;
+}
+.h-9 {
+  height: 2.25rem;
 }
 .min-h-72 {
   min-height: 18rem;
@@ -810,6 +855,10 @@ video {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
 }
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
 .font-sans {
   font-family: Inter, sans-serif;
 }
@@ -836,6 +885,12 @@ video {
 }
 .font-semibold {
   font-weight: 600;
+}
+.font-thin {
+  font-weight: 100;
+}
+.font-extralight {
+  font-weight: 200;
 }
 .uppercase {
   text-transform: uppercase;
