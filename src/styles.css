@@ -86,3 +86,7 @@
 .fade-out {
   animation: fadeOut 1s forwards;
 }
+
+body {
+  overflow: hidden;
+}
