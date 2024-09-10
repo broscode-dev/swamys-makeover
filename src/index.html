@@ -184,7 +184,7 @@
         </button>
       </section>
       <!-- Location & Contact Info-->
-      <section class="w-full px-5 py-10 gap-5 flex flex-col">
+      <section class="w-full p-5 gap-5 flex flex-col">
         <div class="flex flex-col gap-5 animate-fade-from-left-on-scroll">
           <h1
             class="text-lg uppercase font-semibold animate-fade-from-left-on-scroll"
@@ -199,10 +199,10 @@
           </p>
         </div>
         <!-- Location in Map -->
-        <div class="min-h-72 animate-fade-from-left-on-scroll">
+        <div class="animate-fade-from-left-on-scroll h-96">
           <iframe
             src="https://www.google.com/maps/d/u/1/embed?mid=1WADsQvm4NYDhHX8DFi8hFrDxE7QaWjY&ehbc=2E312F&noprof=1"
-            class="w-full min-h-72 border-none rounded-3xl"
+            class="w-full h-full border border-secondary-400 p-1"
           ></iframe>
         </div>
         <!-- Location & Contact Info -->
@@ -219,7 +219,9 @@
             </div>
             <div class="flex flex-col gap-1">
               <h3 class="font-semibold text-lg">Location</h3>
-              <p class="text-sm">123 Elm St, San Francisco, California</p>
+              <p class="text-sm font-light">
+                123 Elm St, San Francisco, California
+              </p>
             </div>
           </div>
 
@@ -233,13 +235,55 @@
             <div class="flex flex-col gap-1">
               <h3 class="font-semibold text-lg">Contact</h3>
               <div class="flex flex-col">
-                <p class="text-sm">+91 1234567890</p>
-                <p class="text-sm">swamysmakeoverstudio@gmail.com</p>
+                <p class="text-sm font-light">+91 1234567890</p>
+                <p class="text-sm font-light">swamysmakeoverstudio@gmail.com</p>
               </div>
             </div>
           </div>
         </div>
+        <hr class="border-secondary-400" />
       </section>
+
+      <!-- Footer -->
+      <footer class="p-5 flex flex-col gap-10">
+        <img src="../public/assets/Asset 2.png" alt="logo" class="h-10 w-fit" />
+        <div class="flex flex-col gap-1">
+          <h1 class="font-semibold">Contact</h1>
+          <h2 class="font-light text-sm">+91 1234567890</h2>
+          <h2 class="font-light text-sm">swamysmakeoverstudio@gmail.com</h2>
+        </div>
+        <div class="flex flex-col gap-1">
+          <h1 class="font-semibold">Opening Hours</h1>
+          <h2 class="font-light text-sm">
+            Monday to Sunday: 09:30 AM - 08: 30 PM
+          </h2>
+        </div>
+        <div class="flex flex-col gap-1">
+          <a href="#" class="text-sm font-light">Home</a>
+          <a href="#" class="text-sm font-light">Services</a>
+          <a href="#" class="text-sm font-light">About Us</a>
+          <a href="#" class="text-sm font-light">Works</a>
+          <a href="#" class="text-sm font-light">Contact</a>
+        </div>
+        <div class="flex flex-col gap-1">
+          <h2 class="text-sm font-light">Disclaimer</h2>
+          <h2 class="text-sm font-light">Privacy Policy</h2>
+        </div>
+        <div class="flex flex-col gap-1">
+          <h2 class="text-sm font-light">All Rights Reserved</h2>
+          <h2 class="text-sm font-light">
+            Designed and Developed by
+            <span
+              ><a
+                href="https://www.instagram.com/broscode.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >BrosCode</a
+              ></span
+            >
+          </h2>
+        </div>
+      </footer>
     </div>
     <script src="./scripts/scroll-animations.js"></script>
 
