@@ -19,11 +19,18 @@
       <!-- Hero Section -->
       <section class="h-dvh w-full flex flex-col relative">
         <video
-          src="../public/assets/4962903-uhd_1440_2732_25fps.mp4"
           class="h-full w-full object-cover backdrop-brightness"
           autoplay
           loop
-        ></video>
+          muted
+          playsinline
+        >
+          <source
+            src="../public/assets/4962903-uhd_1440_2732_25fps.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
         <div class="absolute top-24 w-full">
           <img
             src="../public/assets/Group 1 (11).svg"
@@ -158,8 +165,7 @@
           and the finest service.
         </p>
         <div
-          id="horizontal"
-          class="flex gap-3 p-1 bg-secondary-400 overflow-auto"
+          class="flex gap-3 p-1 bg-secondary-400 overflow-auto works-wrapper"
         >
           <img
             class="object-cover horizontal_item"
