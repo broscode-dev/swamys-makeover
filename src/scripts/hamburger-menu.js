@@ -5,15 +5,19 @@ const wrapper = document.getElementById("wrapper");
 const body = document.body;
 
 hamburgerMenu.addEventListener("click", () => {
-  menuItems.classList.toggle("translate-y-0");
-  menuItems.classList.toggle("-translate-y-full");
+  menuItems.classList.toggle("translate-x-0");
+  menuItems.classList.toggle("translate-x-full");
   body.classList.add("overflow-hidden");
+  menuItems.classList.remove("hidden");
+  menuItems.classList.add("block");
 });
 
 function toggle() {
-  menuItems.classList.add("-translate-y-full");
-  menuItems.classList.remove("translate-y-0");
+  menuItems.classList.add("translate-x-full");
+  menuItems.classList.remove("translate-x-0");
   body.classList.remove("overflow-hidden");
+  menuItems.classList.remove("block");
+  menuItems.classList.add("hidden");
 }
 
 closeMenu.addEventListener("click", toggle);

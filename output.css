@@ -510,6 +510,9 @@ video {
 .relative {
   position: relative;
 }
+.sticky {
+  position: sticky;
+}
 .bottom-10 {
   bottom: 2.5rem;
 }
@@ -559,8 +562,17 @@ video {
 .h-full {
   height: 100%;
 }
+.h-screen {
+  height: 100vh;
+}
 .min-h-dvh {
   min-height: 100dvh;
+}
+.min-h-full {
+  min-height: 100%;
+}
+.min-h-screen {
+  min-height: 100vh;
 }
 .w-14 {
   width: 3.5rem;
