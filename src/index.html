@@ -15,9 +15,12 @@
   </head>
   <body>
     <!-- Body Wrapper -->
-    <div class="flex flex-col min-h-dvh w-dvh font-sans bg-black text-slate-50">
+    <div
+      id="wrapper"
+      class="flex flex-col min-h-dvh w-dvh font-sans bg-black text-slate-50"
+    >
       <!-- Hero Section -->
-      <section class="h-dvh w-full flex flex-col relative">
+      <section class="h-dvh w-full flex flex-col">
         <video
           class="h-full w-full object-cover backdrop-brightness"
           autoplay
@@ -38,24 +41,51 @@
             class="px-5 slide-in-left"
           />
         </div>
+        <!-- Hamburger Menu -->
         <nav
-          class="flex justify-between items-center w-full absolute px-5 py-5 slide-in-top"
+          class="flex justify-between items-center w-full absolute z-50 px-5 py-5 slide-in-top"
         >
           <img src="../public/assets/Asset 2.png" alt="logo" class="h-8" />
           <img
+            id="hamburger-menu"
             src="../public/assets/icons8-hamburger-menu.svg"
             alt="menu"
-            class=""
+            class="cursor-pointer"
           />
+          <div
+            id="menu-items"
+            class="lg:hidden p-5 fixed top-0 right-0 h-dvh w-3/4 bg-secondary-400 transform -translate-y-full duration-300 ease-in-out gap-5 flex flex-col"
+          >
+            <button id="close-menu" class="w-full">
+              <img src="../public/assets/icons8-close.svg" alt="close-menu" />
+            </button>
+            <div class="flex flex-col justify-center gap-5 w-full">
+              <a class="cursor-pointer text-black font-bold" href="#home"
+                >HOME</a
+              >
+              <a class="cursor-pointer text-black font-bold" href="#about"
+                >ABOUT US</a
+              >
+              <a class="cursor-pointer text-black font-bold" href="#skills"
+                >SERVICES</a
+              >
+              <a class="cursor-pointer text-black font-bold" href="#works"
+                >WORKS</a
+              >
+              <a class="cursor-pointer text-black font-bold" href="#book"
+                >BOOK YOUR APPOINTMENT</a
+              >
+            </div>
+          </div>
         </nav>
-        <p class="absolute bottom-28 px-5 slide-in-left">
+        <p class="absolute bottom-28 px-5 slide-in-left z-0">
           At Swamy's Makeover, we believe everyone deserves to feel beautiful.
           Our expert team provides personalized beauty services, from facials to
           bridal makeovers, ensuring a unique, relaxing, and transformative
           experience for all.
         </p>
         <div
-          class="flex flex-col gap-2 absolute bottom-10 slide-in-left w-full"
+          class="flex flex-col gap-2 absolute bottom-10 slide-in-left w-full z-0"
         >
           <a class="mx-5" href="./booking.html">
             <button
@@ -301,5 +331,6 @@
 
     <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
     <script src="./scripts/lenis.js"></script>
+    <script src="./scripts/hamburger-menu.js"></script>
   </body>
 </html>
