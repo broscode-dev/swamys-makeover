@@ -525,6 +525,18 @@ video {
 .top-24 {
   top: 6rem;
 }
+.top-28 {
+  top: 7rem;
+}
+.top-48 {
+  top: 12rem;
+}
+.bottom-48 {
+  bottom: 12rem;
+}
+.top-10 {
+  top: 2.5rem;
+}
 .z-0 {
   z-index: 0;
 }
