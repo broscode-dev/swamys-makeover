@@ -5,13 +5,15 @@ const body = document.body;
 
 // Function to open the menu with smooth animation
 hamburgerMenu.addEventListener("click", () => {
-  menuItems.classList.remove("translate-x-full", "hidden"); // Remove the 'hidden' and 'translate-x-full' to open
-  menuItems.classList.add("translate-x-0", "block"); // Add 'translate-x-0' to slide into view
-
-  // Disable body scroll
-  body.style.overflow = "hidden";
-  body.style.position = "fixed";
-  body.style.width = "100%";
+  menuItems.classList.remove("hidden");
+  menuItems.classList.add("block");
+  setTimeout(() => {
+    menuItems.classList.remove("translate-x-full");
+    menuItems.classList.add("translate-x-0");
+    body.style.overflow = "hidden";
+    body.style.position = "fixed";
+    body.style.width = "100%";
+  }, 100);
 });
 
 // Function to close the menu with smooth animation
@@ -25,6 +27,7 @@ function closeMenuHandler() {
     body.style.position = "";
     body.style.width = "";
     menuItems.classList.add("hidden"); // Hide the menu after the animation completes
+    menuItems.classList.remove("block");
   }, 300); // Match this delay with the duration of the transition
 }
 
@@ -32,6 +35,4 @@ function closeMenuHandler() {
 closeMenu.addEventListener("click", closeMenuHandler);
 
 // Optional: Prevent closing the menu when clicking inside the menu
-menuItems.addEventListener("click", (event) => {
-  event.stopPropagation();
-});
+menuItems.addEventListener("click", closeMenuHandler);
