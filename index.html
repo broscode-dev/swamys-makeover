@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swamys Makeover | Home</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./src/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Body Wrapper -->
+    <div
+      id="wrapper"
+      class="flex flex-col min-h-dvh w-dvh font-sans bg-black text-slate-50"
+    >
+      <!-- Hero Section -->
+      <section class="h-dvh w-full flex flex-col relative">
+        <video
+          class="h-full w-full object-cover backdrop-brightness"
+          autoplay
+          loop
+          muted
+          playsinline
+        >
+          <source
+            src="./public/assets/4962903-uhd_1440_2732_25fps.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="absolute top-24 w-full">
+          <img
+            src="./public/assets/Group 1 (11).svg"
+            alt="tagline"
+            class="px-5 slide-in-left"
+          />
+        </div>
+
+        <!-- Hamburger Menu -->
+        <nav
+          class="flex justify-between items-center w-full absolute z-50 px-5 py-5 slide-in-top"
+        >
+          <img src="./public/assets/Asset 2.png" alt="logo" class="h-8" />
+          <img
+            id="hamburger-menu"
+            src="./public/assets/icons8-hamburger-menu.svg"
+            alt="menu"
+            class="cursor-pointer"
+          />
+          <div
+            id="menu-items"
+            class="lg:hidden p-5 fixed top-0 right-0 h-screen w-3/4 bg-secondary-400 transform translate-x-full duration-300 ease-in-out hidden"
+          >
+            <button id="close-menu" class="w-full">
+              <img
+                src="./public/assets/icons8-right-arrow-48.png"
+                alt="close-menu"
+              />
+            </button>
+            <div class="flex flex-col justify-center gap-5 w-full">
+              <a class="cursor-pointer text-black font-bold" href="#home"
+                >HOME</a
+              >
+              <a class="cursor-pointer text-black font-bold" href="#about"
+                >ABOUT US</a
+              >
+              <a class="cursor-pointer text-black font-bold" href="#skills"
+                >SERVICES</a
+              >
+              <a class="cursor-pointer text-black font-bold" href="#works"
+                >WORKS</a
+              >
+              <a class="cursor-pointer text-black font-bold" href="#book"
+                >BOOK YOUR APPOINTMENT</a
+              >
+            </div>
+          </div>
+        </nav>
+        <p class="absolute bottom-28 px-5 slide-in-left">
+          At Swamy's Makeover, we believe everyone deserves to feel beautiful.
+          Our expert team provides personalized beauty services, from facials to
+          bridal makeovers, ensuring a unique, relaxing, and transformative
+          experience for all.
+        </p>
+        <div
+          class="flex flex-col gap-2 absolute bottom-10 slide-in-left w-full"
+        >
+          <a class="mx-5" href="./src/booking.html">
+            <button
+              class="w-full bg-secondary-400 text-slate-900 uppercase font-bold py-3"
+            >
+              Book Your Appointment
+            </button></a
+          >
+        </div>
+      </section>
+      <!-- About -->
+      <section class="w-full flex flex-col gap-10 p-5">
+        <h2
+          class="font-bold text-lg uppercase animate-fade-from-left-on-scroll"
+        >
+          Step Into a World of Exceptional Service and Unwind in a Relaxing
+          Atmosphere
+        </h2>
+        <div class="flex flex-col gap-5">
+          <!-- Your style perfected -->
+          <div
+            class="flex gap-10 items-center animate-fade-from-left-on-scroll"
+          >
+            <img
+              class="w-20"
+              src="./public/assets/icons/undraw_barber_-3-uel.svg"
+              alt="salon-chair"
+            />
+            <div class="flex flex-col gap-3">
+              <h3 class="font-semibold">Your Style, Perfected</h3>
+              <p class="text-sm font-extralight">
+                From chic cuts to bold transformations, our expert stylists are
+                dedicated to bringing your vision to life. You deserve a look
+                that reflects your personality — let us make it happen.
+              </p>
+            </div>
+          </div>
+          <!-- Tailored to you -->
+          <div
+            class="flex gap-10 items-center animate-fade-from-left-on-scroll"
+          >
+            <img
+              class="w-20"
+              src="./public/assets/icons/undraw_choose_re_7d5a.svg"
+              alt="Aura"
+            />
+            <div class="flex flex-col gap-3">
+              <h3 class="font-semibold">Tailored To You</h3>
+              <p class="text-sm font-extralight">
+                No two styles are the same. Our personalized consultations
+                ensure that every service is customized to match your unique
+                preferences and lifestyle.
+              </p>
+            </div>
+          </div>
+          <!-- Confidence begins Here -->
+          <div
+            class="flex gap-10 items-center animate-fade-from-left-on-scroll"
+          >
+            <img
+              class="w-20"
+              src="./public/assets/icons/undraw_jewelry_iima.svg"
+              alt="Shining Heart"
+            />
+            <div class="flex flex-col gap-3">
+              <h3 class="font-semibold">Confidence Begins Here</h3>
+              <p class="text-sm font-extralight">
+                Look good, feel great! With attention to every detail, we craft
+                a style that elevates your confidence and leaves you feeling
+                your best.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Services -->
+      <section class="w-full flex flex-col justify-center gap-5 p-5">
+        <h1
+          class="text-lg uppercase font-semibold animate-fade-from-left-on-scroll"
+        >
+          Services Offered
+        </h1>
+        <button
+          class="p-1 bg-secondary-400 text-black font-semibold animate-fade-from-left-on-scroll relative flex flex-col justify-center items-center"
+        >
+          <img
+            id="service"
+            src=""
+            alt=""
+            class="brightness-50"
+            loading="lazy"
+          />
+          <h1 id="name" class="text-2xl absolute text-slate-50 uppercase"></h1>
+        </button>
+        <button
+          class="w-full bg-secondary-400 text-slate-900 uppercase font-bold py-3"
+        >
+          View Services
+        </button>
+      </section>
+      <!-- Works Intro -->
+      <section
+        class="w-full p-5 flex flex-col gap-5 animate-fade-from-left-on-scroll"
+      >
+        <h1
+          class="text-lg uppercase font-semibold animate-fade-from-left-on-scroll"
+        >
+          Discover our works
+        </h1>
+        <p class="font-light">
+          Our skilled hair stylists are passionate about their craft, constantly
+          updating their techniques and knowledge to bring you the latest styles
+          and the finest service.
+        </p>
+        <div
+          class="flex gap-3 p-1 bg-secondary-400 overflow-auto works-wrapper"
+        >
+          <img
+            class="object-cover horizontal_item"
+            src="./public/assets/works/pexels-lolarussian-1804514.jpg"
+            alt="img-1"
+            loading="lazy"
+          />
+          <img
+            class="object-cover horizontal_item"
+            src="./public/assets/works/pexels-anastasiya-gepp-654466-2065203.jpg"
+            alt="img-2"
+            loading="lazy"
+          />
+          <img
+            class="object-cover horizontal_item"
+            src="./public/assets/works/pexels-alipazani-2681751.jpg"
+            alt="img-2"
+            loading="lazy"
+          />
+        </div>
+        <button
+          class="w-full bg-secondary-400 text-slate-900 uppercase font-bold py-3"
+        >
+          View Works
+        </button>
+      </section>
+      <!-- Location & Contact Info-->
+      <section class="w-full p-5 gap-5 flex flex-col">
+        <div class="flex flex-col gap-5 animate-fade-from-left-on-scroll">
+          <h1
+            class="text-lg uppercase font-semibold animate-fade-from-left-on-scroll"
+          >
+            Beyond Ordinary, Into The Extraordinary
+          </h1>
+          <p class="font-light">
+            Step into our barbershop, a haven crafted for those who value
+            premium quality, precision, and impeccable style. We elevate your
+            look with subtle sophistication, ensuring you exude confidence and
+            class effortlessly.
+          </p>
+        </div>
+        <!-- Location in Map -->
+        <div class="animate-fade-from-left-on-scroll h-96">
+          <iframe
+            src="https://www.google.com/maps/d/u/1/embed?mid=1WADsQvm4NYDhHX8DFi8hFrDxE7QaWjY&ehbc=2E312F&noprof=1"
+            class="w-full h-full border border-secondary-400 p-1"
+          ></iframe>
+        </div>
+        <!-- Location & Contact Info -->
+        <div class="flex flex-col gap-8 animate-fade-from-left-on-scroll">
+          <!-- Location -->
+          <div class="flex items-center gap-5">
+            <div
+              class="flex justify-center items-center bg-slate-50 rounded-full w-14 h-14"
+            >
+              <img
+                src="./public/assets/icons/pin-drop.svg"
+                alt="location_icon"
+              />
+            </div>
+            <div class="flex flex-col gap-1">
+              <h3 class="font-semibold text-lg">Location</h3>
+              <p class="text-sm font-light">
+                123 Elm St, San Francisco, California
+              </p>
+            </div>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="flex items-center gap-5">
+            <div
+              class="flex justify-center items-center bg-slate-50 rounded-full w-14 h-14"
+            >
+              <img src="./public/assets/icons/phone.svg" alt="location_icon" />
+            </div>
+            <div class="flex flex-col gap-1">
+              <h3 class="font-semibold text-lg">Contact</h3>
+              <div class="flex flex-col">
+                <p class="text-sm font-light">+91 1234567890</p>
+                <p class="text-sm font-light">swamysmakeoverstudio@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="border-secondary-400" />
+      </section>
+
+      <!-- Footer -->
+      <footer class="p-5 flex flex-col gap-10">
+        <img src="./public/assets/Asset 2.png" alt="logo" class="h-10 w-fit" />
+        <div class="flex flex-col gap-1">
+          <h1 class="font-semibold">Contact</h1>
+          <h2 class="font-light text-sm">+91 1234567890</h2>
+          <h2 class="font-light text-sm">swamysmakeoverstudio@gmail.com</h2>
+        </div>
+        <div class="flex flex-col gap-1">
+          <h1 class="font-semibold">Opening Hours</h1>
+          <h2 class="font-light text-sm">
+            Monday to Sunday: 09:30 AM - 08: 30 PM
+          </h2>
+        </div>
+        <div class="flex flex-col gap-1">
+          <a href="#" class="text-sm font-light">Home</a>
+          <a href="#" class="text-sm font-light">Services</a>
+          <a href="#" class="text-sm font-light">About Us</a>
+          <a href="#" class="text-sm font-light">Works</a>
+          <a href="#" class="text-sm font-light">Contact</a>
+        </div>
+        <div class="flex flex-col gap-1">
+          <h2 class="text-sm font-light">Disclaimer</h2>
+          <h2 class="text-sm font-light">Privacy Policy</h2>
+        </div>
+        <div class="flex flex-col gap-1">
+          <h2 class="text-sm font-light">All Rights Reserved</h2>
+          <h2 class="text-sm font-light">
+            Designed and Developed by
+            <span
+              ><a
+                href="https://www.instagram.com/broscode.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >BrosCode</a
+              ></span
+            >
+          </h2>
+        </div>
+      </footer>
+    </div>
+    <script src="./src/scripts/scroll-animations.js"></script>
+
+    <script src="./src/scripts/services.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/studio-freight/lenis@latest/bundled/lenis.js"></script>
+    <script src="./src/scripts/lenis.js"></script>
+    <script src="./src/scripts/hamburger-menu.js"></script>
+  </body>
+</html>
