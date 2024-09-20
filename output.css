@@ -525,21 +525,6 @@ video {
 .top-24 {
   top: 6rem;
 }
-.top-28 {
-  top: 7rem;
-}
-.top-48 {
-  top: 12rem;
-}
-.bottom-48 {
-  bottom: 12rem;
-}
-.top-10 {
-  top: 2.5rem;
-}
-.z-0 {
-  z-index: 0;
-}
 .z-50 {
   z-index: 50;
 }
@@ -547,14 +532,17 @@ video {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
 }
-.block {
-  display: block;
-}
 .flex {
   display: flex;
 }
 .hidden {
   display: none;
+}
+.h-8 {
+  height: 2rem;
+}
+.h-dvh {
+  height: 100dvh;
 }
 .h-10 {
   height: 2.5rem;
@@ -562,14 +550,8 @@ video {
 .h-14 {
   height: 3.5rem;
 }
-.h-8 {
-  height: 2rem;
-}
 .h-96 {
   height: 24rem;
-}
-.h-dvh {
-  height: 100dvh;
 }
 .h-full {
   height: 100%;
@@ -579,6 +561,9 @@ video {
 }
 .min-h-dvh {
   min-height: 100dvh;
+}
+.w-full {
+  width: 100%;
 }
 .w-14 {
   width: 3.5rem;
@@ -592,9 +577,6 @@ video {
 .w-fit {
   width: -moz-fit-content;
   width: fit-content;
-}
-.w-full {
-  width: 100%;
 }
 .translate-x-full {
   --tw-translate-x: 100%;
@@ -618,20 +600,20 @@ video {
 .justify-between {
   justify-content: space-between;
 }
-.gap-1 {
-  gap: 0.25rem;
-}
 .gap-10 {
   gap: 2.5rem;
-}
-.gap-2 {
-  gap: 0.5rem;
 }
 .gap-20 {
   gap: 5rem;
 }
 .gap-3 {
   gap: 0.75rem;
+}
+.gap-1 {
+  gap: 0.25rem;
+}
+.gap-2 {
+  gap: 0.5rem;
 }
 .gap-5 {
   gap: 1.25rem;
@@ -671,11 +653,11 @@ video {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.p-1 {
-  padding: 0.25rem;
-}
 .p-3 {
   padding: 0.75rem;
+}
+.p-1 {
+  padding: 0.25rem;
 }
 .p-5 {
   padding: 1.25rem;
@@ -699,6 +681,10 @@ video {
 .font-sans {
   font-family: Inter, sans-serif;
 }
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
 .text-2xl {
   font-size: 1.5rem;
   line-height: 2rem;
@@ -711,21 +697,17 @@ video {
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
-.text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
-}
 .font-bold {
   font-weight: 700;
+}
+.font-semibold {
+  font-weight: 600;
 }
 .font-extralight {
   font-weight: 200;
 }
 .font-light {
   font-weight: 300;
-}
-.font-semibold {
-  font-weight: 600;
 }
 .uppercase {
   text-transform: uppercase;
